@@ -4,11 +4,11 @@ require 'vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 
-$objPHPExcel = new Spreadsheet();
+
 $filePath  = "./cherry.xlsx";
 $spreadsheet = \PhpOffice\PhpSpreadsheet\IOFactory::load($filePath);
-$sheet = $result = $spreadsheet->getActiveSheet();
-$cellsData = $result->toArray();
+$sheet = $spreadsheet->getActiveSheet();
+$cellsData = $sheet->toArray();
 
 if (count($cellsData) > 1) {
     foreach ($cellsData as $key=>$cellRow) {
