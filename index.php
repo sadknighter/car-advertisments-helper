@@ -1,7 +1,7 @@
 <?php
 echo "Hello, world!";
 require 'vendor/autoload.php';
-use ZipArchive;
+
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 
 $objPHPExcel = new Spreadsheet();
