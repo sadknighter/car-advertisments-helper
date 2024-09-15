@@ -51,7 +51,7 @@ function IsGrouppedDataRow($row) : bool {
     $rowLength = count($row);
 
     for ($i = 1; $i < $rowLength; $i++) {
-        $result = $result && $row[$i];
+        $result = $result && $row[$i] == null;
     }
 
     return $result;
